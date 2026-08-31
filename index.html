@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>JARVIS APEX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hud">
+
+    <!-- BACKGROUND CIRCUIT SYSTEM -->
+    <div class="circuit-field">
+        <span class="trace t1"></span>
+        <span class="trace t2"></span>
+        <span class="trace t3"></span>
+        <span class="trace t4"></span>
+        <span class="trace t5"></span>
+        <span class="trace t6"></span>
+        <span class="trace t7"></span>
+        <span class="trace t8"></span>
+    </div>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="brand-mark">J</div>
+            <div>
+                <div class="brand-name">JARVIS</div>
+                <div class="brand-sub">ADVANCED NEURAL INTERFACE</div>
+            </div>
+        </div>
+
+        <div class="system-state">
+            <span class="pulse"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <div class="clock" id="clock">00:00:00</div>
+
+    </header>
+
+
+    <!-- LEFT ENGINEERING DATA -->
+    <aside class="left-panel">
+
+        <div class="panel-title">ANALYSING DATA</div>
+
+        <div class="mini-line"></div>
+
+        <div class="data-group">
+            <span>NEURAL CORE</span>
+            <strong id="neural">98.4%</strong>
+        </div>
+
+        <div class="data-group">
+            <span>VOICE LINK</span>
+            <strong id="voiceState">STANDBY</strong>
+        </div>
+
+        <div class="data-group">
+            <span>NETWORK</span>
+            <strong>CONNECTED</strong>
+        </div>
+
+        <div class="data-group">
+            <span>LATENCY</span>
+            <strong id="latency">24 MS</strong>
+        </div>
+
+        <div class="micro-diagram">
+
+            <div class="node n1"></div>
+            <div class="node n2"></div>
+            <div class="node n3"></div>
+            <div class="node n4"></div>
+
+            <div class="connector c1"></div>
+            <div class="connector c2"></div>
+            <div class="connector c3"></div>
+
+        </div>
+
+        <div class="tiny-code">
+            SYS.001 / CORE<br>
+            NEURAL_MATRIX<br>
+            AUDIO_CHANNEL<br>
+            COMMAND_ROUTER<br>
+            WEB_INTERFACE<br>
+            DEVICE_LINK
+        </div>
+
+    </aside>
+
+
+    <!-- RIGHT DATA -->
+    <aside class="right-panel">
+
+        <div class="panel-title">SYSTEM TRACK</div>
+
+        <div class="track-row">
+            <span>01</span>
+            <b>VOICE</b>
+            <i class="active"></i>
+        </div>
+
+        <div class="track-row">
+            <span>02</span>
+            <b>BROWSER</b>
+            <i class="active"></i>
+        </div>
+
+        <div class="track-row">
+            <span>03</span>
+            <b>COMMAND</b>
+            <i class="active"></i>
+        </div>
+
+        <div class="track-row">
+            <span>04</span>
+            <b>DEVICE</b>
+            <i class="warning"></i>
+        </div>
+
+        <div class="system-bars">
+
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+
+        </div>
+
+        <div class="coordinates">
+            X: 031.84<br>
+            Y: 884.21<br>
+            Z: 492.73
+        </div>
+
+    </aside>
+
+
+    <!-- CENTRAL REACTOR -->
+    <main class="reactor-zone">
+
+        <div class="target-label">CORE REACTOR // APEX</div>
+
+        <div class="reactor">
+
+            <!-- OUTER RINGS -->
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            <div class="ring ring-4"></div>
+
+            <!-- TECH MARKS -->
+            <div class="marks marks-1"></div>
+            <div class="marks marks-2"></div>
+
+            <!-- CORE -->
+            <div class="core-shell">
+
+                <div class="core-ring"></div>
+
+                <div class="core">
+                    <div class="core-inner"></div>
+                    <div class="core-light"></div>
+                </div>
+
+            </div>
+
+            <!-- ORBIT NODES -->
+            <div class="orbit-node o1"></div>
+            <div class="orbit-node o2"></div>
+            <div class="orbit-node o3"></div>
+            <div class="orbit-node o4"></div>
+
+        </div>
+
+        <div class="reactor-status">
+            <span id="reactorText">REACTOR STANDBY</span>
+            <small id="power">POWER 42%</small>
+        </div>
+
+    </main>
+
+
+    <!-- BOTTOM INFORMATION -->
+
+    <section class="bottom-system">
+
+        <div class="bottom-module">
+            <span class="module-title">BROWSER</span>
+            <strong id="browserStatus">READY</strong>
+        </div>
+
+        <div class="bottom-module">
+            <span class="module-title">AUDIO</span>
+            <strong id="audioStatus">READY</strong>
+        </div>
+
+        <div class="bottom-module">
+            <span class="module-title">COMMANDS</span>
+            <strong id="commandCount">000</strong>
+        </div>
+
+        <div class="bottom-module">
+            <span class="module-title">CORE TEMP</span>
+            <strong id="temperature">31.2°</strong>
+        </div>
+
+    </section>
+
+
+    <!-- VOICE VISUALIZER -->
+
+    <div class="voice-display">
+
+        <div class="voice-label">
+            <span class="pulse"></span>
+            <span id="listenText">JARVIS READY</span>
+        </div>
+
+        <div class="wave" id="wave">
+
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMMAND TERMINAL -->
+
+    <div class="command-terminal">
+
+        <span class="terminal-prefix">></span>
+
+        <input
+            id="commandInput"
+            type="text"
+            autocomplete="off"
+            placeholder="ENTER COMMAND / SPEAK TO JARVIS..."
+        >
+
+        <button id="sendButton">↗</button>
+
+    </div>
+
+
+    <!-- LAST COMMAND -->
+    <div class="last-command">
+        LAST COMMAND:
+        <span id="lastCommand">NONE</span>
+    </div>
+
+
+    <!-- STATUS NOTIFICATION -->
+    <div class="notification" id="notification">
+        SYSTEM INITIALIZED
+    </div>
+
+
+    <!-- SCAN LINE -->
+    <div class="scan-line"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
